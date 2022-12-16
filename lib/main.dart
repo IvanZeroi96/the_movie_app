@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
 import 'package:the_movie_app/l10n/l10n.dart';
+import 'package:the_movie_app/model/routes.dart';
 import 'package:the_movie_app/pages/splash_page.dart';
 
 void main() {
@@ -29,9 +30,7 @@ class MyApp extends StatelessWidget {
         Locale('en','US'),
       ],
       initialRoute: '/',
-      getPages: [
-        GetPage(name: '/', page: () => const SplashPage(),),
-      ],
+      getPages: routes,
     );
   }
 }
